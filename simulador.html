@@ -9,6 +9,11 @@
 <body>
 
     <div class="container">
+
+        <div class="logo-container">
+        <img src="monopoly.png" alt="Logo Monopoly" class="logo-img">
+    </div>
+
         <h1>Simulador de Crédito</h1>
 
         <h2>Datos financieros</h2>
@@ -18,8 +23,8 @@
         <label for="txtEgresos">Egresos:</label>
         <input type="text" id="txtEgresos">
 
-        <p>Disponible: <span id="spnDisponible"></span></p>
-        <p>Capacidad de pago mensual: <span id="spnCapacidadPago"></span></p>
+        <p>Disponible: <span id="lblDisponibleValor"></span></p>
+        <p>Capacidad de pago mensual: <span id="lblCapacidadPagoValor"></span></p>
 
         <h2>Solicitud de crédito</h2>
         <label for="txtMonto">Monto:</label>
@@ -31,16 +36,19 @@
         <label for="txtTasaInteres">Tasa de interés:</label>
         <input type="text" id="txtTasaInteres">
 
-        <p>Interés a pagar: <span id="spnInteresPagar"></span></p>
-        <p>Total préstamo: <span id="spnTotalPrestamo"></span></p>
-        <p>Cuota mensual: <span id="spnCuotaMensual"></span></p>
-        <p>Estado de crédito: <span id="spnEstadoCredito">ANALIZANDO...</span></p>
+        <p>Interés a pagar: <span id="lblInteresValor"></span></p>
+        <p>Total préstamo: <span id="lblTotalValor"></span></p>
+        <p>Cuota mensual: <span id="lblCuotaValor"></span></p>
+        <p>Estado de crédito: <span id="lblResultado">ANALIZANDO...</span></p>
 
         <div class="buttons">
-            <button id="btnCalcularCredito">Calcular Crédito</button>
-            <button id="btnReiniciar">Reiniciar</button>
+            <button onclick="calcular()">Calcular Crédito</button>
+            <button onclick="reiniciar()">Reiniciar</button>
         </div>
     </div>
+
+    <script src="funciones.js"></script>
+    <script src="simulador.js"></script>
 
 </body>
 </html>

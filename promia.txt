@@ -1,0 +1,2 @@
+ahora lo vas a mejorar visualmente no cambies los ids manten la misma estructura si cambias algo que sea leve o seria mucho mejor no hacerlo solo vamos a trabajar con el css para que sea un simulador de credito que se vea mas profesional como el de un banco
+haslo un poquito mas mejor agrega logos del banco pichincha o bueno deja ese espacio para yo agregar el logo de monopoly o bueno deja solo el espacio para yo agregar el logo y tu haslo en esa tematica y cambia el tipo de letra
