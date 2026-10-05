@@ -14,13 +14,13 @@ function calcular() {
     document.getElementById("lblTotalValor").textContent = "USD " + totalPagar.toFixed(2);
     let cuotaMensual = calcularCuotaMensual(totalPagar, plazoAnios);
     document.getElementById("lblCuotaValor").textContent = "USD " + cuotaMensual.toFixed(2);
-    let resultado = crearCredito(capacidadPago, cuotaMensual);
-    document.getElementById("lblResultado").textContent = resultado;
+    
+    let fueAprobado = aprobarCredito(capacidadPago, cuotaMensual);
     let lblResultado = document.getElementById("lblResultado");
-    if(fueAprobado){
-        lblResultado.innerText = "CREDTO APROBADO";
+    if (fueAprobado) {
+        lblResultado.textContent = "CREDITO APROBADO";
     } else {
-        lblResultado.innerText = "CREDITO RECHAZADO";
+        lblResultado.textContent = "CREDITO RECHAZADO";
     }
 }
 
