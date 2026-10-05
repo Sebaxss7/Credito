@@ -1,0 +1,18 @@
+PROMPTS DE VALIDACIÓN - SIMULADOR DE CRÉDITO
+
+PROMPT 1: Definición de Reglas de Validación
+"Actúa como un desarrollador web front-end. Necesito agregar validaciones en JavaScript al formulario del simulador de crédito. Las validaciones deben ejecutarse únicamente cuando el usuario presione el botón 'Calcular Simulador'. 
+Las reglas que debes aplicar son:
+1. Campos obligatorios: Ingresos, Egresos, Monto, Plazo y Tasa de Interés no pueden estar vacíos.
+2. Ingresos: Debe ser un número mayor a 0.
+3. Egresos: Debe ser un número mayor o igual a 0 y no puede superar a los ingresos.
+4. Monto: Mínimo $100 y máximo $50,000.
+5. Plazo (años): Debe ser un entero entre 1 y 30.
+6. Tasa de Interés (%): Debe ser un número entre 1% y 50%.
+Por favor genera las funciones de validación en JavaScript de manera limpia."
+
+PROMPT 2: Renderizado de Errores Dinámicos debajo de cada Input
+"Modifica la función calcular() para que, si falla alguna validación, cree dinámicamente un elemento <small> con la clase 'mensaje-error' justo debajo del input correspondiente, resaltando el borde del input en rojo. Si el usuario corrige el error y vuelve a presionar el botón, los mensajes anteriores deben limpiarse automáticamente. Tampoco debe realizar ningún cálculo ni mostrar los resultados si existe al menos un error de validación."
+
+PROMPT 3: Estilos CSS de Errores
+"Dame los estilos CSS necesarios para las clases '.input-error' y '.mensaje-error' respetando el diseño temático del formulario Monopoly existente (colores rojo corporativo, bordes marcados y tipografía legible)."

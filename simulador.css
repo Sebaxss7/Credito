@@ -187,3 +187,19 @@ button:active {
         width: 100%;
     }
 }
+
+/* Estilos para Validaciones de Errores */
+input.input-error {
+    border-color: #e21b23 !important;
+    background-color: #ffebee !important;
+}
+
+.mensaje-error {
+    display: block;
+    color: #d32f2f;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    padding-left: 2px;
+}
